@@ -29,7 +29,13 @@ public class FrogSimulation
 	
 	public double runSimulations(int num)
 	{ 
-		/* to be implemented in part (b) */ 
+		int count = 0;
+		for(int i= 0;i<num;i++){
+			if(simulate()){
+				count++;
+			}
+		}
+		return (double)count/num;
 
 	}
 	
